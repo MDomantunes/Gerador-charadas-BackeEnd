@@ -112,4 +112,4 @@ def excluir_charada(id):
 
 # ---- Execução do servidor ----
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000, debug=True)  # Inicia o servidor Flask, permitindo acessos externos.
+    app.run()  # Inicia o servidor Flask, permitindo acessos externos.
