@@ -1,0 +1,12 @@
+charadas = [
+    {"id": 1, "charada": "O que é, o que é? A capital brasileira que está presente em todos os aniversários.", "resposta": "Palmas"},
+    {"id": 2, "charada": "O que é, o que é? A diferença entre a bota e a calça.", "resposta": "A bota, a gente calça, e a calça, a gente bota."},
+    {"id": 3, "charada": "O que é, o que é? Que dá o poder de atravessar paredes.", "resposta": "A porta."},
+    {"id": 4, "charada": "O que é, o que é? Tem centenas de rodas, mas não sai do lugar.", "resposta": "O estacionamento."},
+    {"id": 5, "charada": "O que é, o que é? Uma impressora disse para a outra.", "resposta": "Essa folha é sua ou é impressão minha?"},
+    {"id": 6, "charada": "O que é, o que é? É proibido comer no café da manhã.", "resposta": "O almoço e o jantar."},
+    {"id": 7, "charada": "O que é, o que é? O zero disse para o oito.", "resposta": "Belo cinto."},
+    {"id": 8, "charada": "O que é, o que é? O motivo dos ovos não contarem piadas.", "resposta": "Para não rachar de rir."},
+    {"id": 9, "charada": "O que é, o que é? A praia disse ao mar.", "resposta": "Deixa de onda."},
+    {"id": 10, "charada": "O que é, o que é? Quebra quando se fala.", "resposta": "O segredo."}
+]
