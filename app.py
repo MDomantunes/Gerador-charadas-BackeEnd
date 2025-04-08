@@ -39,6 +39,7 @@ def charada_aleatoria():
         return jsonify(random.choice(charadas)), 200  # Retorna uma charada aleatória.
     else:
         return jsonify({'mensagem': 'Erro! Nenhuma charada encontrada'}), 404  # Retorna erro se não houver charadas.
+    
 
 # ---- Método GET - Buscar charada pelo ID ----
 @app.route('/charadas/<id>', methods=['GET'])
@@ -109,6 +110,20 @@ def excluir_charada(id):
 
     doc_ref.delete()  # Exclui a charada do Firestore.
     return jsonify({'mensagem': 'Charada excluída com sucesso!'}), 200  # Retorna sucesso.
+
+# ---- Método GET - Charada lista ----
+@app.route('/charadas/lista', methods=['GET'])
+def charada_lista():
+    charadas = []  # Lista para armazenar as charadas.
+    lista = db.collection('charadas').stream()  # Busca todas as charadas no Firestore.
+    
+    for item in lista:
+        charadas.append(item.to_dict())  # Converte os documentos do Firestore em dicionários.
+
+    if charadas:
+        return jsonify(charadas), 200  # Retorna uma charada aleatória.
+    else:
+        return jsonify({'mensagem': 'Erro! Nenhuma charada encontrada'}), 404  # Retorna erro se não houver charadas.
 
 # ---- Execução do servidor ----
 if __name__ == '__main__':
